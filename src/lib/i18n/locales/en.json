@@ -19,10 +19,8 @@
     },
     "chatsWithPhotos": "Chats with photos",
     "addToGroupHint": "Add the bot to new chats to expand your circle of moments",
-    "earlyStage": {
-      "title": "App in early development stage",
-      "description": "We are actively working on improving Snap Now. Your feedback is very important to us and will help make the app better!",
-      "contactButton": "Contact developer"
+    "projectInfo": {
+      "description": "This is an open source project. Source code is available on {githubLink}. For any questions, you can contact {developerLink}."
     }
   },
   "room": {

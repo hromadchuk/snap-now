@@ -236,31 +236,15 @@
 
 .contactSection {
     margin-bottom: 24px;
-    padding: 24px 20px;
-    background: linear-gradient(
-        135deg,
-        color-mix(in srgb, var(--app-primary-color) 15%, transparent),
-        color-mix(in srgb, var(--app-primary-color) 8%, transparent)
-    );
-    border: 1px solid color-mix(in srgb, var(--app-primary-color) 25%, transparent);
 }
 
-.earlyStageContent {
+.projectInfoContent {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    text-align: center;
 }
 
-.earlyStageTitle {
-    color: var(--app-text-color);
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.earlyStageDescription {
+.projectInfoDescription {
     color: var(--app-hint-color);
     font-size: 14px;
     line-height: 1.6;
@@ -269,22 +253,31 @@
 
 .contactButton {
     width: 100%;
-    padding: 14px 20px;
+    padding: 10px 16px;
     background-color: var(--app-primary-color);
     color: var(--app-primary-text-color);
     border: none;
-    border-radius: 12px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px color-mix(in srgb, var(--app-primary-color) 20%, transparent);
+    transition: opacity 0.2s;
+    margin-top: 12px;
 }
 
 .contactButton:active {
-    opacity: 0.9;
-    transform: scale(0.98);
-    box-shadow: 0 1px 4px color-mix(in srgb, var(--app-primary-color) 15%, transparent);
+    opacity: 0.8;
+}
+
+.link {
+    color: var(--app-primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.link:active {
+    opacity: 0.8;
 }
 
 .inviteDescription {

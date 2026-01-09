@@ -26,12 +26,16 @@ function Header() {
     );
 }
 
-function EarlyStageSection() {
+function ProjectInfoSection() {
     const { t } = useI18n();
     const launchParamsData = useLaunchParams();
     const isMobile = isMobileTelegramPlatform(launchParamsData.tgWebAppPlatform);
 
-    const handleContactDeveloper = () => {
+    const handleGitHubClick = () => {
+        openLink('https://github.com/hromadchuk/snap-now');
+    };
+
+    const handleDeveloperClick = () => {
         const url = `https://t.me/${DEVELOPER_USERNAME}`;
         if (isMobile) {
             openTelegramLink(url);
@@ -40,14 +44,50 @@ function EarlyStageSection() {
         }
     };
 
+    const description = t('home.projectInfo.description');
+
+    const linkConfig: Record<string, { href: string; onClick: () => void; text: string }> = {
+        '{githubLink}': {
+            href: 'https://github.com/hromadchuk/snap-now',
+            onClick: handleGitHubClick,
+            text: 'GitHub',
+        },
+        '{developerLink}': {
+            href: `https://t.me/${DEVELOPER_USERNAME}`,
+            onClick: handleDeveloperClick,
+            text: '@emigrant',
+        },
+    };
+
+    const renderDescription = () => {
+        const parts = description.split(/({githubLink}|{developerLink})/);
+
+        return parts.map((part, index) => {
+            const config = linkConfig[part];
+            if (config) {
+                return (
+                    <a
+                        key={index}
+                        href={config.href}
+                        onClick={(e) => {
+                            e.preventDefault();
+                            config.onClick();
+                        }}
+                        className={styles.link}
+                    >
+                        {config.text}
+                    </a>
+                );
+            }
+
+            return part;
+        });
+    };
+
     return (
         <div className={`${styles.welcomeSection} ${styles.contactSection}`}>
-            <div className={styles.earlyStageContent}>
-                <h3 className={styles.earlyStageTitle}>{t('home.earlyStage.title')}</h3>
-                <p className={styles.earlyStageDescription}>{t('home.earlyStage.description')}</p>
-                <button className={styles.contactButton} onClick={handleContactDeveloper}>
-                    {t('home.earlyStage.contactButton')}
-                </button>
+            <div className={styles.projectInfoContent}>
+                <p className={styles.projectInfoDescription}>{renderDescription()}</p>
             </div>
         </div>
     );
@@ -142,7 +182,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <EarlyStageSection />
+                <ProjectInfoSection />
             </div>
         );
     }
@@ -186,7 +226,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <EarlyStageSection />
+            <ProjectInfoSection />
         </div>
     );
 }
