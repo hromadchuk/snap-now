@@ -33,10 +33,7 @@
       "many": "moments"
     },
     "perDay": "per day",
-    "settings": "Settings",
-    "settingsDescription": "Configure chat notifications and other settings",
     "notificationsPerDay": "Notifications per day",
-    "notificationPerDay": "notification per day",
     "timeRange": "Time range (hours)",
     "utcNote": "Time in UTC",
     "language": "Language",
@@ -45,10 +42,8 @@
       "one": "minute",
       "many": "minutes"
     },
-    "day": "day",
     "save": "Save",
     "saving": "Saving...",
-    "settingsAccessNote": "Settings are available only to creator and administrators",
     "momentsTitle": "Moments",
     "noMoments": "No moments yet",
     "photo": {
@@ -65,33 +60,25 @@
     "closeCamera": "Close camera",
     "timerPhoto": "Timer photo",
     "showMore": "Show more",
-    "secondsShort": "s",
-    "minutesShort": "m",
     "shareToStory": "Share to story",
     "sharing": "Generating...",
-    "shareText": "Capture moments together @snap_now_bot"
+    "shareText": "Capture moments together @snap_now_bot",
+    "retry": "Retry"
   },
   "common": {
-    "initializing": "Initializing app...",
-    "error": "Error",
     "cancel": "Cancel",
     "close": "Close"
   },
   "errors": {
-    "invalidUser": "Invalid user",
-    "mustBeChatMember": "You must be a member of this chat",
-    "errorVerifyingChatMembership": "Error verifying chat membership",
-    "initError": "Init error"
+    "invalidUser": "Invalid user"
   },
   "bot": {
     "hello": "Hello! 👋",
     "startDescription": "Snap Now is a bot for creating shared moments in your chat. The bot sends notifications at random times, and all participants have a few minutes to take a photo.\n\nAdd me to a group to start creating moments together!",
     "addToGroup": "Add to Group",
-    "openMiniApp": "Open the mini app",
     "openApp": "Open app",
     "thanksForAdding": "Thanks for adding me to the chat!",
-    "notificationReminder": "📸 Time to take a photo! You have {minutes} {minutesWord}.",
-    "paySupport": "For any questions, please contact the developer @emigrant"
+    "notificationReminder": "📸 Time to take a photo! You have {minutes} {minutesWord}."
   }
 }
 

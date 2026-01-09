@@ -2,21 +2,6 @@
     padding: 16px;
 }
 
-.card {
-    border-radius: 12px;
-    background-color: var(--app-section-bg-color);
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.card:has(+ .card) {
-    margin-bottom: 16px;
-}
-
-.space {
-    height: 16px;
-}
-
 .sectionTitle {
     color: var(--app-text-color);
     font-size: 15px;
@@ -25,8 +10,4 @@
     display: flex;
     align-items: center;
     gap: 6px;
-}
-
-.sectionTitleIcon {
-    font-size: 16px;
 }

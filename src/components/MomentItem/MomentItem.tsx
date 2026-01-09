@@ -162,7 +162,7 @@ export function MomentItem({ moment, chatId, minutesTakePhoto, momentNumber }: M
 
     return (
         <div
-            className={`${styles.momentItem} ${moment.photos.length === 0 ? styles.momentItemNoPhotos : ''} ${
+            className={`${styles.momentItem} ${
                 isCompletedEmpty ? styles.momentItemCompletedEmpty : ''
             } ${isCompletedWithoutUserPhoto ? styles.momentItemCompletedWithoutUserPhoto : ''}`}
         >

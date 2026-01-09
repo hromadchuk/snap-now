@@ -131,46 +131,6 @@
     margin: 0;
 }
 
-.features {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.feature {
-    background-color: var(--app-section-bg-color);
-    border-radius: 12px;
-    padding: 16px;
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-}
-
-.featureIcon {
-    font-size: 32px;
-    line-height: 1;
-    flex-shrink: 0;
-}
-
-.featureContent {
-    flex: 1;
-    min-width: 0;
-}
-
-.featureTitle {
-    color: var(--app-text-color);
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 6px 0;
-}
-
-.featureDescription {
-    color: var(--app-hint-color);
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 0;
-}
-
 .chatsList {
     display: flex;
     flex-direction: column;
@@ -251,24 +211,6 @@
     margin: 0;
 }
 
-.contactButton {
-    width: 100%;
-    padding: 10px 16px;
-    background-color: var(--app-primary-color);
-    color: var(--app-primary-text-color);
-    border: none;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: opacity 0.2s;
-    margin-top: 12px;
-}
-
-.contactButton:active {
-    opacity: 0.8;
-}
-
 .link {
     color: var(--app-primary-color);
     text-decoration: none;
@@ -278,101 +220,5 @@
 
 .link:active {
     opacity: 0.8;
-}
-
-.inviteDescription {
-    color: var(--app-hint-color);
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0 0 16px 0;
-}
-
-.inviteLinkContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.inviteLink {
-    padding: 12px 16px;
-    background-color: color-mix(in srgb, var(--app-bg-color) 20%, transparent);
-    border: 1px solid color-mix(in srgb, var(--app-text-color) 20%, transparent);
-    border-radius: 10px;
-    color: var(--app-text-color);
-    font-size: 14px;
-    word-break: break-all;
-    line-height: 1.5;
-}
-
-.copyInviteButton {
-    width: 100%;
-    padding: 12px 16px;
-    background-color: var(--app-primary-color);
-    color: var(--app-primary-text-color);
-    border: none;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.copyInviteButton:active {
-    opacity: 0.8;
-}
-
-.newsChannelSection {
-    margin-bottom: 24px;
-    padding: 20px;
-    cursor: pointer;
-    transition: opacity 0.2s, transform 0.2s;
-}
-
-.newsChannelSection:active {
-    opacity: 0.8;
-    transform: scale(0.98);
-}
-
-.newsChannelContent {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-}
-
-.newsChannelAvatar {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    overflow: hidden;
-    flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.newsChannelAvatarImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.newsChannelInfo {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.newsChannelTitle {
-    color: var(--app-text-color);
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.newsChannelDescription {
-    color: var(--app-hint-color);
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0;
 }
 
