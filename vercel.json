@@ -1,0 +1,30 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/notifications/generate",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/notifications/send",
+      "schedule": "* * * * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/moments/:path*",
+      "destination": "https://K3OrUlY5RtrmZ90d.public.blob.vercel-storage.com/moments/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/moments/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
+

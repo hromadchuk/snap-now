@@ -1,0 +1,344 @@
+.cameraOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.cameraOverlayContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cameraCloseButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s;
+}
+
+.cameraCloseButton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cameraCloseButton:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cameraTimer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 10001;
+}
+
+.cameraTimerLabel {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cameraTimerValue {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.5px;
+}
+
+.cameraPreview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cameraControls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.switchCameraButton {
+    min-width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.switchCameraButton:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.switchCameraButton:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.switchCameraButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.cameraVideo {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 200px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--app-section-bg-color);
+}
+
+@media (max-height: 600px) {
+    .cameraVideo {
+        max-height: calc(100vh - 160px);
+    }
+}
+
+.zoomControl {
+    width: 100%;
+    margin: 8px 0;
+    padding: 0 8px;
+}
+
+.zoomSlider {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    touch-action: none;
+}
+
+.zoomSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--app-primary-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--app-primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
+    margin-top: -8px;
+}
+
+.zoomSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.zoomSlider::-webkit-slider-thumb:active {
+    transform: scale(1.15);
+}
+
+.zoomSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--app-primary-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--app-primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.zoomSlider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+.zoomSlider::-moz-range-thumb:active {
+    transform: scale(1.15);
+}
+
+.zoomSlider::-webkit-slider-runnable-track {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.zoomSlider::-moz-range-track {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.timerPhotoButton {
+    min-width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.timerPhotoButton:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.timerPhotoButton:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timerPhotoButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.timerCountdown {
+    color: var(--app-primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.sendPhotoButton {
+    flex: 1;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sendPhotoButton:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sendPhotoButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sendPhotoButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.cameraError {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 20px;
+}
+
+.cameraErrorText {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(248, 113, 113, 0.5);
+    border-radius: 8px;
+    border: 2px solid var(--color-red, #f87171);
+}
+
+.retryButton {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.retryButton:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.retryButton:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.retryButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

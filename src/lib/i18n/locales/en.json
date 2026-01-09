@@ -1,0 +1,99 @@
+{
+  "home": {
+    "title": "Snap Now",
+    "subtitle": "Capture moments together",
+    "welcome": "Welcome!",
+    "description": "Snap Now is a bot for creating shared moments in your chat. The bot sends notifications at random times, and all participants have a few minutes to take a photo.",
+    "howToUse": "How to use",
+    "step1": {
+      "title": "Add bot to group",
+      "description": "Add bot to needed chats"
+    },
+    "step2": {
+      "title": "Configure notifications",
+      "description": "Open the app through a message in the chat and configure notification settings"
+    },
+    "step3": {
+      "title": "Receive notifications",
+      "description": "Wait for a random notification the next day"
+    },
+    "chatsWithPhotos": "Chats with photos",
+    "addToGroupHint": "Add the bot to new chats to expand your circle of moments",
+    "earlyStage": {
+      "title": "App in early development stage",
+      "description": "We are actively working on improving Snap Now. Your feedback is very important to us and will help make the app better!",
+      "contactButton": "Contact developer"
+    }
+  },
+  "room": {
+    "title": "Room",
+    "subtitle": "Room management",
+    "emptyState": "Room page",
+    "unknownChat": "Unknown chat",
+    "moment": {
+      "one": "moment",
+      "many": "moments"
+    },
+    "perDay": "per day",
+    "settings": "Settings",
+    "settingsDescription": "Configure chat notifications and other settings",
+    "notificationsPerDay": "Notifications per day",
+    "notificationPerDay": "notification per day",
+    "timeRange": "Time range (hours)",
+    "utcNote": "Time in UTC",
+    "language": "Language",
+    "minutesTakePhoto": "Time to take photo",
+    "minutes": {
+      "one": "minute",
+      "many": "minutes"
+    },
+    "day": "day",
+    "save": "Save",
+    "saving": "Saving...",
+    "settingsAccessNote": "Settings are available only to creator and administrators",
+    "momentsTitle": "Moments",
+    "noMoments": "No moments yet",
+    "photo": {
+      "one": "photo",
+      "many": "photos"
+    },
+    "timeLeft": "Time left",
+    "takePhoto": "Take photo",
+    "activeMoment": "Active moment",
+    "loading": "Loading...",
+    "sendPhoto": "Send photo",
+    "sending": "Sending...",
+    "switchCamera": "Switch camera",
+    "closeCamera": "Close camera",
+    "timerPhoto": "Timer photo",
+    "showMore": "Show more",
+    "secondsShort": "s",
+    "minutesShort": "m",
+    "shareToStory": "Share to story",
+    "sharing": "Generating...",
+    "shareText": "Capture moments together @snap_now_bot"
+  },
+  "common": {
+    "initializing": "Initializing app...",
+    "error": "Error",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "errors": {
+    "invalidUser": "Invalid user",
+    "mustBeChatMember": "You must be a member of this chat",
+    "errorVerifyingChatMembership": "Error verifying chat membership",
+    "initError": "Init error"
+  },
+  "bot": {
+    "hello": "Hello! 👋",
+    "startDescription": "Snap Now is a bot for creating shared moments in your chat. The bot sends notifications at random times, and all participants have a few minutes to take a photo.\n\nAdd me to a group to start creating moments together!",
+    "addToGroup": "Add to Group",
+    "openMiniApp": "Open the mini app",
+    "openApp": "Open app",
+    "thanksForAdding": "Thanks for adding me to the chat!",
+    "notificationReminder": "📸 Time to take a photo! You have {minutes} {minutesWord}.",
+    "paySupport": "For any questions, please contact the developer @emigrant"
+  }
+}
+

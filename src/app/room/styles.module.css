@@ -1,0 +1,1618 @@
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.title {
+    color: var(--app-text-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--app-hint-color);
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.emptyState {
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--app-hint-color);
+}
+
+.chatCard {
+    background-color: var(--app-section-bg-color);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.chatPhoto {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.chatInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.chatTitle {
+    color: var(--app-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    word-wrap: break-word;
+}
+
+.chatMomentsCount {
+    color: var(--app-hint-color);
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.chatNotificationsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.chatNotificationItem {
+    color: var(--app-hint-color);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.settingsButton {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.settingsButton:hover {
+    background-color: var(--app-bg-color);
+}
+
+.settingsButton:active {
+    background-color: var(--app-divider-color);
+}
+
+.settingsCard {
+    background-color: var(--app-section-bg-color);
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.settingsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.settingsHeaderContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.settingsTitle {
+    color: var(--app-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.settingsToggle {
+    color: var(--app-hint-color);
+    font-size: 14px;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+.settingsContent {
+    color: var(--app-text-color);
+    margin-top: 16px;
+}
+
+.settingsText {
+    color: var(--app-hint-color);
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    line-height: 1.5;
+}
+
+.settingsField {
+    margin-bottom: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--app-divider-color);
+}
+
+.settingsField:first-of-type {
+    padding-top: 0;
+    border-top: none;
+}
+
+.settingsField:last-of-type {
+    margin-bottom: 20px;
+}
+
+.settingsLabelRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.settingsLabel {
+    display: block;
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.settingsValue {
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 12px;
+    background-color: var(--app-bg-color);
+    border: 1px solid var(--app-divider-color);
+    border-radius: 8px;
+}
+
+.settingsInfoField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    border-top: 1px solid var(--app-divider-color);
+}
+
+.settingsInfoLabel {
+    color: var(--app-hint-color);
+    font-size: 14px;
+}
+
+.settingsInfoValue {
+    color: var(--app-text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.settingsInput {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: var(--app-bg-color);
+    border: 1px solid var(--app-divider-color);
+    border-radius: 8px;
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.settingsInput:focus {
+    outline: none;
+    border-color: var(--app-primary-color);
+}
+
+.radioGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px 16px;
+    background-color: var(--app-bg-color);
+    border: 1px solid var(--app-divider-color);
+    border-radius: 8px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.radioLabel:hover {
+    background-color: var(--app-section-bg-color);
+    border-color: var(--app-primary-color);
+}
+
+.radioInput {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radioText {
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+    pointer-events: none;
+}
+
+.radioLabel:has(.radioInput:checked) {
+    background-color: var(--app-primary-color);
+    border-color: var(--app-primary-color);
+}
+
+.radioLabel:has(.radioInput:checked) .radioText {
+    color: var(--app-primary-text-color);
+}
+
+.languageGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.languageLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px 16px;
+    background-color: var(--app-bg-color);
+    border: 1px solid var(--app-divider-color);
+    border-radius: 8px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.languageLabel:hover {
+    background-color: var(--app-section-bg-color);
+    border-color: var(--app-primary-color);
+}
+
+.languageIcon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.languageLabel:has(.radioInput:checked) {
+    background-color: var(--app-primary-color);
+    border-color: var(--app-primary-color);
+}
+
+.languageLabel:has(.radioInput:checked) .radioText {
+    color: var(--app-primary-text-color);
+}
+
+.rangeSliderContainer {
+    margin-bottom: 0;
+}
+
+.rangeSliderWrapper {
+    position: relative;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.rangeSliderWrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--app-divider-color);
+    border-radius: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rangeSliderWrapper::after {
+    content: '';
+    position: absolute;
+    left: calc((var(--from, 10) / 23) * 100%);
+    right: calc(100% - (var(--to, 20) / 23) * 100%);
+    height: 4px;
+    background: var(--app-primary-color);
+    border-radius: 2px;
+    pointer-events: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rangeSlider {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rangeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: var(--app-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: all;
+    border: 3px solid var(--app-bg-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease;
+    margin-top: -10px;
+}
+
+.rangeSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.rangeSlider::-webkit-slider-thumb:active {
+    transform: scale(1.15);
+}
+
+.rangeSlider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: var(--app-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: all;
+    border: 3px solid var(--app-bg-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease;
+}
+
+.rangeSlider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+.rangeSlider::-moz-range-thumb:active {
+    transform: scale(1.15);
+}
+
+.rangeSlider::-webkit-slider-runnable-track {
+    height: 4px;
+    background: transparent;
+    border-radius: 2px;
+}
+
+.rangeSlider::-moz-range-track {
+    height: 4px;
+    background: transparent;
+    border-radius: 2px;
+}
+
+.rangeValues {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.rangeValue {
+    color: var(--app-text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.slider {
+    flex: 1;
+    height: 4px;
+    background: var(--app-divider-color);
+    border-radius: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--app-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider::-webkit-slider-thumb:active {
+    transform: scale(0.95);
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--app-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb:active {
+    transform: scale(0.95);
+}
+
+.sliderValue {
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-weight: 600;
+    min-width: 45px;
+    text-align: right;
+}
+
+.utcNote {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.settingsNote {
+    color: var(--app-hint-color);
+    font-size: 13px;
+    margin: 0 0 16px 0;
+    line-height: 1.4;
+}
+
+.settingsAccessNote {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.saveButton {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--app-primary-color);
+    color: var(--app-primary-text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.saveButton:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.saveButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.activeMomentCard {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--app-primary-color) 0%, var(--app-primary-color) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activeMomentHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.activeMomentIcon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.activeMomentTitle {
+    color: var(--app-primary-text-color);
+    font-size: 20px;
+    font-weight: 700;
+    flex: 1;
+}
+
+.activeMomentTimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.activeMomentTimerLabel {
+    color: var(--app-primary-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.activeMomentTimerValue {
+    color: var(--app-primary-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -1px;
+}
+
+.activeMomentTimerCompact {
+    padding: 8px 12px;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.activeMomentTimerCompact .activeMomentTimerLabel {
+    font-size: 12px;
+}
+
+.activeMomentTimerCompact .activeMomentTimerValue {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+}
+
+.activeMomentTheme {
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.activeMomentThemeCompact {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.activeMomentThemeText {
+    color: var(--app-primary-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.activeMomentThemeCompact .activeMomentThemeText {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.activeMomentButton {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activeMomentButton:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activeMomentButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activeMomentButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.sendingLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.sendingText {
+    color: var(--app-primary-text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cameraError {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cameraErrorText {
+    color: var(--app-primary-text-color);
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(248, 113, 113, 0.5);
+    border-radius: 8px;
+    border: 2px solid var(--color-red);
+}
+
+.cameraOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.cameraOverlayContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cameraCloseButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s;
+}
+
+.cameraCloseButton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cameraCloseButton:active {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cameraTimer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 10001;
+}
+
+.cameraTimerLabel {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cameraTimerValue {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.5px;
+}
+
+.cameraPreview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cameraControls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.switchCameraButton {
+    min-width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.switchCameraButton:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.switchCameraButton:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.switchCameraButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.cameraVideoWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.cameraVideo {
+    width: 100%;
+    max-width: 100%;
+    max-height: calc(100vh - 200px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--app-section-bg-color);
+}
+
+@media (max-height: 600px) {
+    .cameraVideo {
+        max-height: calc(100vh - 160px);
+    }
+}
+
+.zoomControl {
+    width: 100%;
+    margin: 8px 0;
+    padding: 0 8px;
+}
+
+.zoomSlider {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    touch-action: none;
+}
+
+.zoomSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--app-primary-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--app-primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
+    margin-top: -8px;
+}
+
+.zoomSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.zoomSlider::-webkit-slider-thumb:active {
+    transform: scale(1.15);
+}
+
+.zoomSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--app-primary-text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--app-primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.zoomSlider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+}
+
+.zoomSlider::-moz-range-thumb:active {
+    transform: scale(1.15);
+}
+
+.zoomSlider::-webkit-slider-runnable-track {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.zoomSlider::-moz-range-track {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.captureButton {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.captureButton:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.captureButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photoPreview {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.photoPreviewImage {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: var(--app-section-bg-color);
+}
+
+.timerPhotoButton {
+    min-width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.timerPhotoButton:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.timerPhotoButton:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timerPhotoButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.timerCountdown {
+    color: var(--app-primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.sendPhotoButton {
+    flex: 1;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--app-primary-text-color);
+    color: var(--app-primary-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sendPhotoButton:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sendPhotoButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sendPhotoButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.momentsSection {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: var(--app-bg-color);
+    border-radius: 12px;
+}
+
+.momentsTitleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.momentsTitle {
+    color: var(--app-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.momentsCount {
+    color: var(--app-hint-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.noMoments {
+    color: var(--app-hint-color);
+    font-size: 15px;
+    text-align: center;
+    padding: 24px;
+}
+
+.momentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.loadMoreButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: var(--app-primary-color);
+    color: var(--app-primary-text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.loadMoreButton:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.loadMoreButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.momentItem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+    background-color: var(--app-section-bg-color);
+    border-radius: 12px;
+    border: 1px solid var(--app-divider-color);
+    transition: all 0.2s;
+}
+
+.momentItemCompletedEmpty {
+    padding: 8px 12px;
+    gap: 0;
+    opacity: 0.6;
+}
+
+.momentItemCompletedWithoutUserPhoto {
+    padding: 10px 14px;
+    gap: 8px;
+}
+
+.momentHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.momentPurchaseButtonContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.momentPurchaseButton {
+    width: 100%;
+    padding: 10px 16px;
+    background: var(--app-primary-color);
+    color: var(--app-primary-text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.momentPurchaseButton:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.momentPurchaseButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.momentPurchaseButtonLoader {
+    animation: spin 1s linear infinite;
+}
+
+.momentShareButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.momentShareButton {
+    flex: 1;
+    padding: 8px 16px;
+    background: var(--app-secondary-bg-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    height: 40px;
+}
+
+.momentShareButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.momentShareButtonLoader {
+    animation: spin 1s linear infinite;
+}
+
+.momentShareVkButton {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: var(--app-secondary-bg-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.momentShareVkButton:hover {
+    opacity: 0.8;
+}
+
+.momentShareVkButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.momentHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.momentHeaderCompact {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+
+.momentIcon {
+    position: relative;
+    font-size: 24px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.momentDateRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.momentNumber {
+    color: var(--app-hint-color);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.momentNumberCompact {
+    color: var(--app-hint-color);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.momentInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.momentInfoCompact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.momentDateRowCompact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.momentDate {
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.momentDateCompact {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.momentTime {
+    color: var(--app-hint-color);
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.momentTimeCompact {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.momentPhotosCompact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.momentPhotosLabelCompact {
+    color: var(--app-hint-color);
+    font-size: 11px;
+    line-height: 1;
+}
+
+.momentTimer {
+    color: var(--app-primary-color);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 4px;
+    line-height: 1.2;
+}
+
+.momentTheme {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -2px;
+    line-height: 1.3;
+    opacity: 0.8;
+}
+
+.momentTakePhotoButton {
+    padding: 8px 16px;
+    background-color: var(--app-primary-color);
+    color: var(--app-primary-text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.momentTakePhotoButton:hover {
+    opacity: 0.9;
+}
+
+.momentTakePhotoButton:active {
+    opacity: 0.8;
+}
+
+.momentThumbnails {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.momentThumbnailsCompact {
+    gap: 4px;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.momentThumbnailCard {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.momentThumbnailCardCompact {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.momentThumbnailCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.momentThumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.momentThumbnailPlaceholder {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--app-divider-color);
+    background-color: var(--app-section-bg-color);
+    font-size: 28px;
+    line-height: 1;
+}
+
+.momentThumbnailPlaceholderCompact {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+}
+
+.momentThumbnailOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+    padding: 6px 4px 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 24px;
+}
+
+.photoViewerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.photoViewerContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoViewerImage {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.photoViewerClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s;
+}
+
+.photoViewerClose:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.photoViewerPrev,
+.photoViewerNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s;
+}
+
+.photoViewerPrev {
+    left: 20px;
+}
+
+.photoViewerNext {
+    right: 20px;
+}
+
+.photoViewerPrev:hover,
+.photoViewerNext:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.photoViewerCounter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 10001;
+}
+
+.photoViewerAuthor {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 10001;
+    white-space: nowrap;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.photoViewerAuthorAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.momentThumbnailAuthorAvatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.momentThumbnailAuthorName {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.devClearButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #ec3942;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.devClearButton:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.devClearButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+

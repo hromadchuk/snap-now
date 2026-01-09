@@ -1,0 +1,53 @@
+{
+  "name": "snap-now",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint && tsc --noEmit",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.35.0",
+    "@tma.js/init-data-node": "^2.0.4",
+    "@tma.js/sdk-react": "^3.0.11",
+    "@upstash/redis": "^1.35.8",
+    "@vercel/analytics": "^1.6.1",
+    "@vercel/blob": "^2.0.0",
+    "dayjs": "^1.11.18",
+    "grammy": "^1.38.4",
+    "mongodb": "^7.0.0",
+    "next": "16.0.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.7",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  }
+}

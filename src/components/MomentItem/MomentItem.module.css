@@ -1,0 +1,529 @@
+.momentItem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+    background-color: var(--app-section-bg-color);
+    border-radius: 12px;
+    border: 1px solid var(--app-divider-color);
+    transition: all 0.2s;
+}
+
+.momentItemCompletedEmpty {
+    padding: 8px 12px;
+    gap: 0;
+    opacity: 0.6;
+}
+
+.momentItemCompletedWithoutUserPhoto {
+    padding: 10px 14px;
+    gap: 8px;
+}
+
+.momentHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.momentPurchaseButtonContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.momentPurchaseButton {
+    width: 100%;
+    padding: 10px 16px;
+    background: var(--app-primary-color);
+    color: var(--app-primary-text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.momentPurchaseButton:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.momentPurchaseButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.momentPurchaseButtonLoader {
+    animation: spin 1s linear infinite;
+}
+
+.momentShareButtonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.momentShareButton {
+    flex: 1;
+    padding: 8px 16px;
+    background: var(--app-secondary-bg-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    height: 40px;
+}
+
+.momentShareButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.momentShareButtonLoader {
+    animation: spin 1s linear infinite;
+}
+
+.momentShareVkButton {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: var(--app-secondary-bg-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.momentShareVkButton:hover {
+    opacity: 0.8;
+}
+
+.momentShareVkButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.momentHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.momentHeaderCompact {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+
+.momentIcon {
+    position: relative;
+    font-size: 24px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.momentDateRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.momentNumber {
+    color: var(--app-hint-color);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.momentNumberCompact {
+    color: var(--app-hint-color);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.momentInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.momentInfoCompact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.momentDateRowCompact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.momentDate {
+    color: var(--app-text-color);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.momentDateCompact {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.momentTime {
+    color: var(--app-hint-color);
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.momentTimeCompact {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.momentPhotosCompact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.momentPhotosLabelCompact {
+    color: var(--app-hint-color);
+    font-size: 11px;
+    line-height: 1;
+}
+
+.momentTimer {
+    color: var(--app-primary-color);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 4px;
+    line-height: 1.2;
+}
+
+.momentTheme {
+    color: var(--app-hint-color);
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -2px;
+    line-height: 1.3;
+    opacity: 0.8;
+}
+
+.momentTakePhotoButton {
+    padding: 8px 16px;
+    background-color: var(--app-primary-color);
+    color: var(--app-primary-text-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.momentTakePhotoButton:hover {
+    opacity: 0.9;
+}
+
+.momentTakePhotoButton:active {
+    opacity: 0.8;
+}
+
+.momentThumbnails {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.momentThumbnailsCompact {
+    gap: 4px;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.momentThumbnailCard {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.momentThumbnailCardCompact {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.momentThumbnailCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.momentThumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.momentThumbnailPlaceholder {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--app-divider-color);
+    background-color: var(--app-section-bg-color);
+    font-size: 28px;
+    line-height: 1;
+}
+
+.momentThumbnailPlaceholderCompact {
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+}
+
+.momentThumbnailOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+    padding: 6px 4px 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 24px;
+}
+
+.photoViewerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.photoViewerContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoViewerImage {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.photoViewerClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s;
+}
+
+.photoViewerClose:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.photoViewerPrev,
+.photoViewerNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s;
+}
+
+.photoViewerPrev {
+    left: 20px;
+}
+
+.photoViewerNext {
+    right: 20px;
+}
+
+.photoViewerPrev:hover,
+.photoViewerNext:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.photoViewerCounter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 10001;
+}
+
+.photoViewerAuthor {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 10001;
+    white-space: nowrap;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.photoViewerAuthorAvatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.momentThumbnailAuthorAvatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.momentThumbnailAuthorName {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.devClearButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #ec3942;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.devClearButton:hover:not(:disabled) {
+    opacity: 0.9;
+}
+
+.devClearButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
